@@ -20,24 +20,6 @@ Algoritma decrease and conquer terdiri dari dua tahapan:
 ## Info General
 Tujuan dari pembuatan proyek ini adalah untuk memenuhi tugas kecil II mata kuliah IF2211 Strategi Algoritma semester 4 Teknik Informatika Institut Teknologi Bandung tahun ajaran 2020/2021.
 
-Isi repository
-    .
-    ├── bin                     # **Tidak ada**
-    ├── doc
-    |    └── Laporan-13519021.pdf
-    ├── src                     # Source code 
-    |    └── main.py
-    ├── test                    # Data uji (8 buah)
-    │    ├── uji.txt
-    │    ├── uji2.txt
-    │    ├── uji3.txt
-    │    ├── uji4.txt
-    │    ├── uji5.txt
-    │    ├── uji6.txt
-    │    ├── uji7.txt
-    |    └── uji8.txt
-    └── README.md
-
 ## Teknologi
 Python - version 3.9.0
 
@@ -53,9 +35,9 @@ git clone "https://github.com/arjunamarcelino/IF2211-Tucil2_13519021.git"
 6. Buka folder *repository* tersebut dan persiapkan file yang berisi soal yang ingin diselesaikan dan masukkan ke dalam folder **test**
 7. Buka kembali Command Prompt
 8. Buka *directory* folder src pada Command Prompt dengan perintah **cd src/**
-9. Jalankan program main.py dengan perintah
+9. Jalankan program main_13519021.py dengan perintah
 ```bash
-python main.py
+python main_13519021.py
 ```
 10. Program penyusunan rencana kuliah dapat dijalankan
 
