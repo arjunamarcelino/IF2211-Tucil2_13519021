@@ -1,0 +1,6 @@
+MatematikaIA.
+MatematikaIIA, MatematikaIA.
+MatematikaDiskrit, MatematikaIIA, MatematikaIA.
+Strategi Algoritma, MatematikaDiskrit.
+Algeo, MatematikaIIA.
+ProbStat, MatematikaDiskrit.

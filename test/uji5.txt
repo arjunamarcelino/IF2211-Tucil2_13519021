@@ -1,0 +1,9 @@
+KewirausahaanDasar, PengantarBisnis.
+Kewirausahaan, KewirausahaanDasar.
+PengantarBisnis.
+StudiKelayakanBisnis, ManajemenKeuangan, ManajemenPemasaran, KewirausahaanDasar.
+ManajemenKeuangan.
+ManajemenPemasaran.
+PenguatanKelembagaanBisnis, Kewirausahaan.
+SimulasiBisnis, Kewirausahaan.
+SeminarKewirausahaan, PenguatanKelembagaanBisnis, SimulasiBisnis.

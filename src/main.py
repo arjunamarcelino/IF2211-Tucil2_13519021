@@ -40,15 +40,21 @@ A, B.
 C, D, E.
 F.
 G, H, I, J.
+
+File teks dianggap sudah valid (memenuhi syarat mata kuliah dengan prasyaratnya).
+Tidak akan ada proses validasi, jika isi file salah, maka program akan error (karena terjadinya rekurens yang tak hingga).
+Pastikan file teks anda sudah benar.
+Beberapa kesalahan umum :
+1. Mata kuliah prasyarat tidak terdaftar di mata kuliah.
+2. Mata kuliah prasyarat dan mata kuliahnya terjadi pada semester yang sama
 '''
 def load() :
     #input nama file 
+    print("Program hanya akan menerima file yang berekstensi .txt (harap mencantumkan ekstensi file juga)")
     nama = input("Masukkan nama File Daftar Mata Kuliah : ")
 
-    #membuka dan membaca file
+    #membuka dan membaca file yang sudah diletakkan di folder test
     DataMataKuliah = open ("../test/"+nama,"r")
-
-    #menampilkan isi file teks
 
     #menyimpan ke dalam array
     MatKul = [[num for num in line.split(',')] for line in DataMataKuliah]
@@ -72,6 +78,7 @@ Output : List hasil sorting
 def topsort(AdList, hasil):
     #menyimpan panjang dari AdList atau banyak matkul
     n = len(AdList)
+    curr =[]
 
     #basis
     if (n==0):
@@ -80,7 +87,6 @@ def topsort(AdList, hasil):
         
     #rekurens
     elif (n != 0):
-        curr = []
         visited = False
             
         for i in AdList:
@@ -96,13 +102,15 @@ def topsort(AdList, hasil):
                 for k in curr:
                     if k in AdList[j]: 
                         AdList[j].remove(k)
+
                 if len(AdList[j]) == 0:
                     AdList.remove(AdList[j])
                     j-=1
+
                 j+=1
 
         #menambahkan matkul pada variabel semester
-        semester =""
+        semester = ""
         for j in range (len(curr)):
             if j == len(curr)-1 :
                 semester += curr[j]
@@ -156,6 +164,7 @@ def RencanaKuliah(lisTopo):
 Fungsi Main
 Fungsi utama yang memanfaatkan fungsi cabang yang sudah dibuat untuk menghasilkan solusi
 Program dapat melakukan pengulangan tergantung pada masukkan pengguna di akhir persoalan
+dengan hasil akhir menampilkan solusi yang didapat di layar
 '''
 if __name__ == "__main__":
     #panggil prosedur pembuka
